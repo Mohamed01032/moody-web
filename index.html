@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohamed Elsaeed Fekry</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg">
+  <div class="grid"></div>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <canvas id="particles-canvas"></canvas>
+</div>
+
+<div class="wrap">
+
+  <!-- AVATAR -->
+  <div class="avatar-wrap">
+    <div class="avatar-ring">
+      <div class="avatar-inner">
+        <img id="profile-photo" src="" alt="Mohamed Fekry">
+      </div>
+    </div>
+  </div>
+
+  <!-- NAME -->
+  <div class="name-block">
+    <div class="name">Mohamed <span class="name-gold">Elsaeed</span> Fekry</div>
+    <div class="handle">@ moodywaleed</div>
+  </div>
+
+  <!-- BIO -->
+  <div class="bio">
+    <span class="bio-icon">🎓</span>
+    طالب بجامعة الدلتا للعلوم والتكنولوجيا<br>
+    كلية الذكاء الاصطناعي
+  </div>
+
+  <!-- DIVIDER -->
+  <div class="divider">
+    <div class="divider-line"></div>
+    <div class="divider-diamond"></div>
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- SOCIAL LINKS -->
+  <div class="links">
+
+    <a class="link-btn" href="https://www.instagram.com/m0ody.1.0?igsh=aXVhNGIzbzVwcnM%3D&utm_source=qr" target="_blank">
+      <div class="btn-icon ig-icon">📸</div>
+      <div class="btn-label">
+        <div class="btn-name">Instagram</div>
+        <div class="btn-sub">@m0ody.1.0</div>
+      </div>
+      <div class="btn-arrow">›</div>
+    </a>
+
+    <a class="link-btn" href="https://www.tiktok.com/@1mo0ody" target="_blank">
+      <div class="btn-icon tt-icon">🎵</div>
+      <div class="btn-label">
+        <div class="btn-name">TikTok</div>
+        <div class="btn-sub">@1mo0ody</div>
+      </div>
+      <div class="btn-arrow">›</div>
+    </a>
+
+    <a class="link-btn" href="https://wa.me/2001032454193" target="_blank">
+      <div class="btn-icon wa-icon">💬</div>
+      <div class="btn-label">
+        <div class="btn-name">WhatsApp</div>
+        <div class="btn-sub">+20 010 324 54193</div>
+      </div>
+      <div class="btn-arrow">›</div>
+    </a>
+
+    <a class="link-btn" href="https://www.facebook.com/moo0dy10?mibextid=wwXIfr" target="_blank">
+      <div class="btn-icon fb-icon">👤</div>
+      <div class="btn-label">
+        <div class="btn-name">Facebook</div>
+        <div class="btn-sub">moo0dy10</div>
+      </div>
+      <div class="btn-arrow">›</div>
+    </a>
+
+  </div>
+
+  <!-- QR CODE -->
+  <div class="qr-section">
+    <div class="qr-title">⬡ امسح QR للتواصل ⬡</div>
+    <div class="qr-tabs">
+      <button class="qr-tab active" onclick="showQR(this,'https://www.instagram.com/m0ody.1.0')">إنستا</button>
+      <button class="qr-tab" onclick="showQR(this,'https://www.tiktok.com/@1mo0ody')">تيك توك</button>
+      <button class="qr-tab" onclick="showQR(this,'https://wa.me/2001032454193')">واتساب</button>
+      <button class="qr-tab" onclick="showQR(this,'https://www.facebook.com/moo0dy10')">فيسبوك</button>
+    </div>
+    <div id="qr-display"></div>
+    <div class="qr-hint">امسح بكاميرا موبايلك للفتح مباشرة</div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">Made with <span>♥</span> · Mohamed Fekry · 2026</div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
