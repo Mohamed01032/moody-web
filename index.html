@@ -2,31 +2,34 @@
 <html lang="ar" dir="rtl">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQCL2SBSW2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQCL2SBSW2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VQCL2SBSW2');
+  </script>
 
-  gtag('config', 'G-VQCL2SBSW2');
-</script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mohamed Elsaeed Fekry</title>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <!-- ✅ Security Headers -->
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Content-Security-Policy" 
+        content="default-src 'self' https://www.googletagmanager.com https://fonts.googleapis.com https://fonts.gstatic.com https://cdnjs.cloudflare.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; connect-src 'self' https://www.google-analytics.com;">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Elsaeed Fekry</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <div class="bg">
   <div class="grid"></div>
   <div class="orb orb1"></div>
   <div class="orb orb2"></div>
   <canvas id="particles-canvas"></canvas>
 </div>
-
 <div class="wrap">
-
   <!-- AVATAR -->
   <div class="avatar-wrap">
     <div class="avatar-ring">
@@ -35,31 +38,27 @@
       </div>
     </div>
   </div>
-
   <!-- NAME -->
   <div class="name-block">
     <div class="name">Mohamed <span class="name-gold">Elsaeed</span> Fekry</div>
     <div class="handle">@ moodywaleed</div>
   </div>
-
   <!-- BIO -->
   <div class="bio">
     <span class="bio-icon">🎓</span>
     طالب بجامعة الدلتا للعلوم والتكنولوجيا<br>
     كلية الذكاء الاصطناعي
   </div>
-
   <!-- DIVIDER -->
   <div class="divider">
     <div class="divider-line"></div>
     <div class="divider-diamond"></div>
     <div class="divider-line"></div>
   </div>
-
   <!-- SOCIAL LINKS -->
   <div class="links">
-
-    <a class="link-btn" href="https://www.instagram.com/m0ody.1.0?igsh=aXVhNGIzbzVwcnM%3D&utm_source=qr" target="_blank">
+    <!-- ✅ rel="noopener noreferrer" على كل الروابط الخارجية -->
+    <a class="link-btn" href="https://www.instagram.com/m0ody.1.0?igsh=aXVhNGIzbzVwcnM%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
       <div class="btn-icon ig-icon">📸</div>
       <div class="btn-label">
         <div class="btn-name">Instagram</div>
@@ -67,8 +66,7 @@
       </div>
       <div class="btn-arrow">›</div>
     </a>
-
-    <a class="link-btn" href="https://www.tiktok.com/@1mo0ody" target="_blank">
+    <a class="link-btn" href="https://www.tiktok.com/@1mo0ody" target="_blank" rel="noopener noreferrer">
       <div class="btn-icon tt-icon">🎵</div>
       <div class="btn-label">
         <div class="btn-name">TikTok</div>
@@ -76,17 +74,16 @@
       </div>
       <div class="btn-arrow">›</div>
     </a>
-
-    <a class="link-btn" href="https://wa.me/2001032454193" target="_blank">
+    <a class="link-btn" href="https://wa.me/2001032454193" target="_blank" rel="noopener noreferrer">
       <div class="btn-icon wa-icon">💬</div>
       <div class="btn-label">
         <div class="btn-name">WhatsApp</div>
-        <div class="btn-sub">+20 010 324 54193</div>
+        <!-- ✅ إخفاء الرقم من الواجهة -->
+        <div class="btn-sub">تواصل معي على واتساب</div>
       </div>
       <div class="btn-arrow">›</div>
     </a>
-
-    <a class="link-btn" href="https://www.facebook.com/moo0dy10?mibextid=wwXIfr" target="_blank">
+    <a class="link-btn" href="https://www.facebook.com/moo0dy10?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
       <div class="btn-icon fb-icon">👤</div>
       <div class="btn-label">
         <div class="btn-name">Facebook</div>
@@ -94,9 +91,7 @@
       </div>
       <div class="btn-arrow">›</div>
     </a>
-
   </div>
-
   <!-- QR CODE -->
   <div class="qr-section">
     <div class="qr-title">⬡ امسح QR للتواصل ⬡</div>
@@ -109,12 +104,9 @@
     <div id="qr-display"></div>
     <div class="qr-hint">امسح بكاميرا موبايلك للفتح مباشرة</div>
   </div>
-
   <!-- FOOTER -->
   <div class="footer">Made with <span>♥</span> · Mohamed Fekry · 2026</div>
-
 </div>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script src="script.js"></script>
 </body>
